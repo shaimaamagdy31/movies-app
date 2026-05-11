@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movies_app/core/reusable_components/customBtn.dart';
 import 'package:movies_app/core/utils/ColorsManager.dart';
 import 'package:movies_app/core/utils/StringsManager.dart';
@@ -16,7 +17,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   final controller = PageController();
 
   int currentPage = 0;
-
   void nextPage() {
     if (currentPage < OnboardingData.onboardingDataList.length - 1) {
       currentPage++;
@@ -60,12 +60,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               itemCount: OnboardingData.onboardingDataList.length,
             ),
             Container(
-              padding: EdgeInsets.only(top: 25, bottom: 16, left: 16, right: 16),
+              padding: REdgeInsets.only(top: 25, bottom: 16, left: 16, right: 16),
               decoration: BoxDecoration(
                 color: ColorsManager.black,
                 borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(40),
-                  topLeft: Radius.circular(40),
+                  topRight: Radius.circular(40.r),
+                  topLeft: Radius.circular(40.r),
                 ),
               ),
               child: Column(
@@ -76,7 +76,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     OnboardingData.onboardingDataList[currentPage].title,
                     style: Theme.of(context).textTheme.headlineMedium,
                   ),
-                  SizedBox(height: 8,),
+                  SizedBox(height: 8.h,),
                   if(OnboardingData.onboardingDataList[currentPage].desc !=null)...[
                   Text(
                     OnboardingData.onboardingDataList[currentPage].desc!,
@@ -84,7 +84,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     textAlign: TextAlign.center,
                   ),
                   ],
-                  SizedBox(height: 16,),
+                  SizedBox(height: 16.h,),
                   CustomBtn(
                     text:
                         (currentPage ==
@@ -96,7 +96,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     colorText: Theme.of(context).colorScheme.onPrimary,
                     borderContainer:Colors.transparent,
                   ),
-                  SizedBox(height: 14,),
+                  SizedBox(height: 14.h,),
                   if (currentPage > 0) ...[
                     CustomBtn(
                       text: StringsManager.back,

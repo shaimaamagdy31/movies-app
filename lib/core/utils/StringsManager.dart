@@ -1,7 +1,12 @@
 abstract final class StringsManager {
+
+  //------------start screen----------------------
+
+  static const String exploreNow="Explore Now";
+
   //------------onBoarding----------------------
   //title
-  static const String onBoardingTitle_1="Find Your Next Favorite Movie Here";
+  static const String onBoardingTitle_1="Find Your Next \n Favorite Movie Here";
   static const String onBoardingTitle_2="Discover Movies";
   static const String onBoardingTitle_3="Explore All Genres";
   static const String onBoardingTitle_4="Create Watchlists";

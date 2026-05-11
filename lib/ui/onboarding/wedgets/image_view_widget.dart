@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movies_app/core/utils/AssetsManager.dart';
 import 'package:movies_app/model/onboarding_data.dart';
 
@@ -12,7 +13,7 @@ class ImageViewWidget extends StatelessWidget {
     return Stack(
       children: [
         Image.asset(OnboardingData.onboardingDataList[index].image,
-        height: 620,fit:BoxFit.fill,width:double.infinity,
+        height: 620.h,fit:BoxFit.fill,width:double.infinity,
         ),
         Container(
           decoration: BoxDecoration(

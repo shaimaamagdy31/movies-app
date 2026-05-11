@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomBtn extends StatelessWidget {
   final String text;
-  final VoidCallback onPressed;
+  VoidCallback onPressed;
   final Color colorText;
   final Color colorContainer;
   final Color borderContainer;
@@ -15,17 +16,17 @@ class CustomBtn extends StatelessWidget {
       onTap:onPressed ,
       child: Container(
         width: double.infinity,
-        padding: EdgeInsets.symmetric(vertical: 15),
+        padding: REdgeInsets.symmetric(vertical: 15),
         decoration: BoxDecoration(
           border: Border.all(color:borderContainer ),
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(15.r),
             color: colorContainer,
 
         ),
         child: Center(child: Text(text,
             style:TextStyle(
               fontWeight: FontWeight.w600,
-              fontSize: 20,
+              fontSize: 20.sp,
               color: colorText
             ) )),
 
