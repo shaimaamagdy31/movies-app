@@ -20,6 +20,25 @@ abstract final class StringsManager {
   static const String next="Next";
   static const String finish="Finish";
 
+ //------------Register----------------------
+  static const String register ="Register";
+  static const String createAccount ="Create Account";
+
+
+  static const String nameHint ="Name";
+  static const String emailHint ="Email";
+  static const String phoneHint ="Phone";
+  static const String passwordHint ="Password";
+  static const String confirmPasswordHint ="Confirm Password";
+  static const String haveAccount ="Already Have Account ?";
+  static const String login ="Login";
+  static const String avatar="Avatar";
+
+
+
+
+
+
 
 
 

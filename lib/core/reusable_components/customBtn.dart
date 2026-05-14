@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomBtn extends StatelessWidget {
   final String text;
+   String? iconImage;
   final VoidCallback onPressed;
   final Color colorText;
   final Color colorContainer;
   final Color borderContainer;
-   CustomBtn({required this.text,required this.onPressed,required this.borderContainer,required this.colorContainer,required this.colorText});
+
+   CustomBtn({required this.text,required this.onPressed,required this.borderContainer,required this.colorContainer,required this.colorText,this.iconImage});
 
 
   @override
@@ -15,19 +19,34 @@ class CustomBtn extends StatelessWidget {
       onTap:onPressed ,
       child: Container(
         width: double.infinity,
-        padding: EdgeInsets.symmetric(vertical: 15),
+        padding: REdgeInsets.symmetric(vertical: 15),
         decoration: BoxDecoration(
           border: Border.all(color:borderContainer ),
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(15.r),
             color: colorContainer,
 
         ),
-        child: Center(child: Text(text,
-            style:TextStyle(
-              fontWeight: FontWeight.w600,
-              fontSize: 20,
-              color: colorText
-            ) )),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          spacing: 4.w,
+          children:[
+            if(iconImage!=null)...[
+             SvgPicture.asset(iconImage!) ,
+             Text(text,
+                style:TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 20.sp,
+                    color: colorText
+                ) )
+            ]else
+              Text(text,
+                  style:TextStyle(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 20.sp,
+                      color: colorText
+                  ) ),
+          ] ,
+        ),
 
       ),
     );

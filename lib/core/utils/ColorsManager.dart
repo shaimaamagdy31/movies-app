@@ -14,6 +14,8 @@ static const Color onBoardingColor_5=Color(0xFF601321);
 static const Color onBoardingColor_6=Color(0xFF2A2C30);
 
 
+static const Color fillColorContainer=Color(0xFF282A28);
+
 
 
 
