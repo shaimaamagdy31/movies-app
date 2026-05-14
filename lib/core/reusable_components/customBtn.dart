@@ -28,7 +28,7 @@ class CustomBtn extends StatelessWidget {
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          spacing: 4.w,
+          spacing: 11.w,
           children:[
             if(iconImage!=null)...[
              SvgPicture.asset(iconImage!) ,

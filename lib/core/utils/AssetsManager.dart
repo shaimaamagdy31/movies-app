@@ -26,6 +26,12 @@ static const String gamer8="assets/images/gamer(8).png";
 static const String gamer9="assets/images/gamer(9).png";
 
 
+static const String logo="assets/images/logo film.png";
+static const String google="assets/images/🦆 icon _google_.svg";
+
+
+
+
 
 
 

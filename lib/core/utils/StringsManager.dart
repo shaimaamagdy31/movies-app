@@ -35,6 +35,16 @@ abstract final class StringsManager {
   static const String avatar="Avatar";
 
 
+  static const String forgetPass="Forget Password ?";
+  static const String logInWithGoogle="Login With Google";
+  static const String donotHaveAccount="Don't Have Account ?";
+  static const String createOne="Create One";
+  static const String or="  OR  ";
+
+
+
+
+
 
 
 

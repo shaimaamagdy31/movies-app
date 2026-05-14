@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movies_app/core/utils/AppTheme.dart';
+import 'package:movies_app/ui/signin/screen/signin_screen.dart';
 import 'package:movies_app/ui/signup/screen/signup_screen.dart';
 
 void main() {
@@ -21,10 +22,11 @@ class MyApp extends StatelessWidget {
           theme: AppTheme.darkTheme,
           title: 'movies app',
           debugShowCheckedModeBanner: false,
-          routes: {
-            SignupScreen.routeName:(context)=>SignupScreen()
+          routes:{
+            SignupScreen.routeName:(context)=>SignupScreen(),
+            SignInScreen.routeName:(context)=>SignInScreen()
           },
-          initialRoute:SignupScreen.routeName ,
+          initialRoute:SignInScreen.routeName ,
         );
       }
     );
