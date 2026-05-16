@@ -19,16 +19,17 @@ class CardItem extends StatelessWidget {
           Image.asset(AssetsManager.cardImage),
           Container(
             margin:REdgeInsets.only(top: 13,left: 10) ,
-            padding:REdgeInsets.all(5) ,
+            padding:REdgeInsets.symmetric(horizontal: 4) ,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.r),
               color: ColorsManager.black.withValues(alpha: 0.71),
             ),
 
             child: Row(
+              mainAxisSize: MainAxisSize.min,
               children: [
                 Text("7.7"),
-                SvgPicture.asset(AssetsManager.starIcon)
+                Icon(Icons.star,color: ColorsManager.yellow,)
               ],
             ),
           )
