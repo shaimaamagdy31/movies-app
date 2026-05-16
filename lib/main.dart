@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movies_app/core/utils/AppTheme.dart';
 import 'package:movies_app/ui/forget_password/screen/forget_password_screen.dart';
+import 'package:movies_app/ui/home/screen/home_screen.dart';
 import 'package:movies_app/ui/signin/screen/signin_screen.dart';
 import 'package:movies_app/ui/signup/screen/signup_screen.dart';
 
@@ -26,9 +27,10 @@ class MyApp extends StatelessWidget {
           routes:{
             SignupScreen.routeName:(context)=>SignupScreen(),
             SignInScreen.routeName:(context)=>SignInScreen(),
-            ForgetPasswordScreen.routeName:(context)=>ForgetPasswordScreen()
+            ForgetPasswordScreen.routeName:(context)=>ForgetPasswordScreen(),
+            HomeScreen.routeName:(context)=>HomeScreen()
           },
-          initialRoute:ForgetPasswordScreen.routeName ,
+          initialRoute:HomeScreen.routeName ,
         );
       }
     );

@@ -12,7 +12,6 @@ static const String nameIcon="assets/images/Identification.svg";
 static const String phoneIcon="assets/images/phone.svg";
 static const String emailIcon="assets/images/email.svg";
 static const String passwordIcon="assets/images/password.svg";
-static const String searchIcon="";
 static const String countryEg="assets/images/EG.svg";
 static const String countryLr="assets/images/LR.svg";
 static const String gamer1="assets/images/gamer (1).png";
@@ -30,6 +29,18 @@ static const String logo="assets/images/logo film.png";
 static const String google="assets/images/🦆 icon _google_.svg";
 
 static const String forgetPassImage="assets/images/Forgot password-img.png";
+
+
+static const homeIcon ="assets/images/Home.svg";
+static const homeIconSelected ="assets/images/Home-selected.svg";
+static const searchIcon ="assets/images/Search.svg";
+static const searchIconSelected ="assets/images/Search-selected.svg";
+static const browseIcon ="assets/images/Brouse.svg";
+static const browseIconSelected ="assets/images/Browse-selected.svg";
+static const profileIcon ="assets/images/Profile.svg";
+static const profileIconSelected ="assets/images/Profile-selected.svg";
+
+
 
 
 
