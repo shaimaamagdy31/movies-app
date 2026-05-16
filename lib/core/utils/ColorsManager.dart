@@ -5,6 +5,7 @@ abstract final class ColorsManager {
 static const Color yellow=Color(0xFFF6BD00);
 static const Color black=Color(0xFF121312);
 static const Color white=Color(0xFFFFFFFF);
+static const Color red=Color(0xFFE82626);
 
 static const Color onBoardingColor_1=Color(0xFF121312);
 static const Color onBoardingColor_2=Color(0xFF084250);

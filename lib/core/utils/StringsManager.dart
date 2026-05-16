@@ -45,6 +45,18 @@ abstract final class StringsManager {
   static const String forgetPassword="Forget Password";
   static const String verifyEmail="Verify Email";
 
+  static const String editProfile="Edit Profile";
+  static const String exit="Exit";
+  static const String history="History";
+  static const String watchList="Watch List";
+  static const String wishList="Wish List";
+
+
+
+
+
+
+
 
 
 

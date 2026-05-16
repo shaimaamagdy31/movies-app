@@ -39,6 +39,9 @@ static const browseIcon ="assets/images/Brouse.svg";
 static const browseIconSelected ="assets/images/Browse-selected.svg";
 static const profileIcon ="assets/images/Profile.svg";
 static const profileIconSelected ="assets/images/Profile-selected.svg";
+static const cardImage ="assets/images/card-image.png";
+static const starIcon ="assets/images/star 1.svg";
+
 
 
 
