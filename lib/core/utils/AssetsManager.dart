@@ -42,6 +42,9 @@ static const profileIconSelected ="assets/images/Profile-selected.svg";
 static const cardImage ="assets/images/card-image.png";
 static const starIcon ="assets/images/star 1.svg";
 
+static const userIcon ="assets/images/User-4.svg";
+
+
 
 
 

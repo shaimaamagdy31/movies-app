@@ -5,6 +5,7 @@ import 'package:movies_app/ui/forget_password/screen/forget_password_screen.dart
 import 'package:movies_app/ui/home/screen/home_screen.dart';
 import 'package:movies_app/ui/signin/screen/signin_screen.dart';
 import 'package:movies_app/ui/signup/screen/signup_screen.dart';
+import 'package:movies_app/ui/update_profile/screen/update_profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,9 +29,10 @@ class MyApp extends StatelessWidget {
             SignupScreen.routeName:(context)=>SignupScreen(),
             SignInScreen.routeName:(context)=>SignInScreen(),
             ForgetPasswordScreen.routeName:(context)=>ForgetPasswordScreen(),
-            HomeScreen.routeName:(context)=>HomeScreen()
+            HomeScreen.routeName:(context)=>HomeScreen(),
+            UpdateProfileScreen.routeName:(context)=>UpdateProfileScreen()
           },
-          initialRoute:HomeScreen.routeName ,
+          initialRoute:UpdateProfileScreen.routeName ,
         );
       }
     );
