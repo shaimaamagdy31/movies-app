@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movies_app/core/utils/AppTheme.dart';
+import 'package:movies_app/core/utils/ColorsManager.dart';
 import 'package:movies_app/ui/forget_password/screen/forget_password_screen.dart';
 import 'package:movies_app/ui/home/screen/home_screen.dart';
 import 'package:movies_app/ui/signin/screen/signin_screen.dart';

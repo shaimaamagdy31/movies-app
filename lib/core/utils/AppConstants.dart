@@ -12,5 +12,16 @@ class AppConstants {
     AssetsManager.gamer8,
     AssetsManager.gamer9,
   ];
+  static List<String> dummyData=[
+    "Action",
+    "Adventure",
+    "Biography",
+    "Animation",
+    "Action",
+    "Adventure",
+    "Biography",
+    "Animation",
+  ];
+
 
 }
