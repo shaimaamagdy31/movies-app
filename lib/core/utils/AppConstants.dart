@@ -12,5 +12,17 @@ class AppConstants {
     AssetsManager.gamer8,
     AssetsManager.gamer9,
   ];
+  static Map<String,String> avatarMap={
+    "0":AssetsManager.gamer1,
+    "1":AssetsManager.gamer2,
+    "2":AssetsManager.gamer3,
+    "3":AssetsManager.gamer4,
+    "4":AssetsManager.gamer5,
+    "5":AssetsManager.gamer6,
+    "6":AssetsManager.gamer7,
+    "7":AssetsManager.gamer8,
+    "8":AssetsManager.gamer9,
+
+  };
 
 }
