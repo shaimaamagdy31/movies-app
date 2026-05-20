@@ -168,7 +168,6 @@ class _SignupScreenState extends State<SignupScreen> {
                           colorText: Theme.of(context).colorScheme.onPrimary,
                           borderContainer:Colors.transparent,
                         ),
-
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [

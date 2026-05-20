@@ -29,6 +29,18 @@ class FirestoreManager {
 
     await document.set(user);
   }
+  static Future<bool> checkUserFound(String userId) async {
+
+    var collection=getUserCollection();
+
+    var document = collection.doc(userId);
+
+    var snapshot= await document.get();
+    if(snapshot.exists){
+      return true;
+    }
+    return false;
+  }
 
   static Future<User?> getUser() async {
 
