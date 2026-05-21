@@ -45,6 +45,9 @@ abstract final class StringsManager {
   static const String forgetPassword="Forget Password";
   static const String verifyEmail="Verify Email";
 
+  static const String searchHint="search";
+
+
 
 
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:movies_app/core/utils/ColorsManager.dart';
@@ -8,6 +9,7 @@ import 'package:movies_app/ui/home/tabs/profile/profile_tab.dart';
 
 import '../../../core/utils/AssetsManager.dart';
 import '../tabs/search/search_tab.dart';
+import '../tabs/search/view_model/search_films_view_model.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = "home";
@@ -20,7 +22,9 @@ class _HomeScreenState extends State<HomeScreen> {
   int selectedIndex = 0;
   List<Widget> tabs = [
     HomeTab(),
-    SearchTab(),
+    BlocProvider(
+        create: (context)=>SearchFilmsViewModel(),
+        child: SearchTab()),
     BrowseTab(),
     ProfileTab(),
   ];

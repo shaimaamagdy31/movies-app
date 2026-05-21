@@ -16,6 +16,18 @@ class ApiManger {
     return filmsResponse;
 
   }
+  static Future<FilmsResponse> searchAboutFilms(String word,int page) async {
+    var response = await dio.get("list_movies.json",queryParameters: {
+      "query_term":word,
+      "page":page,
+      "limit":10,
+
+    });
+
+    FilmsResponse filmsResponse=FilmsResponse.fromJson(response.data);
+    return filmsResponse;
+
+  }
 
 
 

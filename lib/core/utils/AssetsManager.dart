@@ -41,6 +41,10 @@ static const profileIcon ="assets/images/Profile.svg";
 static const profileIconSelected ="assets/images/Profile-selected.svg";
 static const film ="assets/images/film.png";
 
+static const empty ="assets/images/Empty 1.png";
+
+
+
 
 
 

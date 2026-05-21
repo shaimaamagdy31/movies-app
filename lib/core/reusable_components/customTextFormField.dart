@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:movies_app/core/utils/ColorsManager.dart';
 
 class CustomTextFormField extends StatefulWidget {
   final String hintText;
@@ -9,8 +11,12 @@ class CustomTextFormField extends StatefulWidget {
   final TextEditingController controller;
   final String? Function(String?)? validator;
   final String prefixIconData;
+  final VoidCallback? onClickPrefix;
+  final VoidCallback? onClickSuffix;
+
   final int maxLines;
   final bool isPassword;
+  final bool isSearch;
 
 
   CustomTextFormField({
@@ -20,8 +26,11 @@ class CustomTextFormField extends StatefulWidget {
     required this.textInputAction,
     required this.controller,
     this.validator,
+    this.onClickPrefix,
+    this.onClickSuffix,
     required this.prefixIconData,
     this.isPassword = false,
+    this.isSearch=false,
     this.maxLines=1
   });
 
@@ -59,11 +68,14 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
         fillColor: Theme.of(context).colorScheme.onSecondaryContainer,
         prefixIcon:Padding(
           padding: REdgeInsets.only(top: 12, bottom: 12, left: 16),
-          child: SvgPicture.asset(
-            widget.prefixIconData,
-            width: 30.w,
-            height: 25.h,
+          child: InkWell(
+            onTap:widget.onClickPrefix,
+            child: SvgPicture.asset(
+              widget.prefixIconData,
+              width: 30.w,
+              height: 25.h,
 
+            ),
           ),
         ),
         suffixIcon: widget.isPassword
@@ -78,7 +90,15 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
             color: Theme.of(context).colorScheme.outline,
           ),
         )
-            : null,
+            : widget.isSearch
+            ?IconButton(
+              onPressed:widget.onClickSuffix,
+              icon: Icon(
+                 Icons.clear,
+                size: 30.sp,
+                color: ColorsManager.white,
+              ),
+             ):null,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16.r),
           borderSide: BorderSide(
