@@ -50,20 +50,20 @@ class _HomeScreenState extends State<HomeScreen> {
                    label: ""
                  ),
                   BottomNavigationBarItem(
-                      label: "",
-                      icon:SvgPicture.asset(AssetsManager.searchIcon),
-                      activeIcon: SvgPicture.asset(AssetsManager.searchIconSelected),
+                    icon:SvgPicture.asset(AssetsManager.searchIcon),
+                    activeIcon: SvgPicture.asset(AssetsManager.searchIconSelected),
+                    label: "",
 
                   ),
                   BottomNavigationBarItem(
-                      icon:SvgPicture.asset(AssetsManager.browseIcon),
-                      activeIcon: SvgPicture.asset(AssetsManager.browseIconSelected),
-                      label: ""
+                    icon:SvgPicture.asset(AssetsManager.browseIcon),
+                    activeIcon: SvgPicture.asset(AssetsManager.browseIconSelected),
+                    label: ""
                   ),
                   BottomNavigationBarItem(
-                      icon:SvgPicture.asset(AssetsManager.profileIcon),
-                      activeIcon: SvgPicture.asset(AssetsManager.profileIconSelected),
-                      label: ""
+                    icon:SvgPicture.asset(AssetsManager.profileIcon),
+                    activeIcon: SvgPicture.asset(AssetsManager.profileIconSelected),
+                    label: ""
                   ),
 
             ]),

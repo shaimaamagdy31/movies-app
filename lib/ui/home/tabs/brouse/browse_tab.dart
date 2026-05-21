@@ -41,7 +41,7 @@ class BrowseTab extends StatelessWidget {
                 ),
                 tabs:AppConstants.dummyData.map((e)=>CustomTab(title: e)).toList(),
               ),
-              Expanded(child: TabBarView(children:AppConstants.dummyData.map((e)=>FilmsList()).toList())),
+              Expanded(child: TabBarView(children:AppConstants.dummyData.map((e)=>FilmsList(selectedGenre: e,)).toList())),
 
             ],
           ),
