@@ -41,17 +41,15 @@ static const profileIcon ="assets/images/Profile.svg";
 static const profileIconSelected ="assets/images/Profile-selected.svg";
 static const film ="assets/images/film.png";
 
+// search
+
 static const empty ="assets/images/Empty 1.png";
 
-
-
-
-
-
-
-
-
-
+// home
+static const backGroundHome ="assets/images/bac ground home.png";
+static const availableNow ="assets/images/Available Now.png";
+static const watchNow ="assets/images/Watch Now.png";
+static const saveIcon ="assets/images/saveIcon.svg";
 
 
 

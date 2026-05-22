@@ -26,9 +26,19 @@ class ApiManger {
 
     FilmsResponse filmsResponse=FilmsResponse.fromJson(response.data);
     return filmsResponse;
-
   }
 
+  static Future<FilmsResponse> getMovies(String selectedGenre,int page) async {
+    var response = await dio.get("list_movies.json",queryParameters: {
+      "genre":selectedGenre,
+      "page":page,
+      "limit":10,
+    });
+
+    FilmsResponse filmsResponse=FilmsResponse.fromJson(response.data);
+    return filmsResponse;
+
+  }
 
 
 

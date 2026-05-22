@@ -41,10 +41,8 @@ abstract final class StringsManager {
   static const String createOne="Create One";
   static const String or="  OR  ";
 
-
   static const String forgetPassword="Forget Password";
   static const String verifyEmail="Verify Email";
-
   static const String searchHint="search";
 
 
